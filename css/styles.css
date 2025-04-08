@@ -819,6 +819,56 @@ footer {
     .hero-content h2 {
         font-size: 1.5rem;
     }
+
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 0 20px;
+    }
+
+    .service-card {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .pricing-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .pricing-card {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .about-text, .about-stats {
+        width: 100%;
+    }
+
+    .about-image {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .contact-form, .contact-info {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -830,16 +880,72 @@ footer {
         font-size: 2rem;
     }
 
+    .services-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .service-card {
+        padding: 20px;
+    }
+
+    .about-stats {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .stat {
+        min-width: 120px;
+    }
+
+    .education-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 15px;
+    }
+
+    .education-card {
+        margin-bottom: 20px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 15px;
+    }
+
+    .footer-section {
+        margin-bottom: 30px;
+        width: 100%;
+    }
+
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .pricing-container {
+        padding: 0 15px;
+    }
+
     .pricing-card {
-        min-width: 100%;
+        width: 100%;
+        max-width: none;
+    }
+
+    .contact-container {
+        padding: 0 15px;
     }
 
     .contact-form, .contact-info {
-        min-width: 100%;
-    }
-    
-    .education-card {
-        min-width: 100%;
+        width: 100%;
+        padding: 20px;
     }
 }
 
